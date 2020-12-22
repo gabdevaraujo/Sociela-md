@@ -25,4 +25,4 @@ app.get('/*', function(req,res) {
   NOTA: quando estiver rodando em "desenvolvimento" e quiser utilizar o ambiente de
   produção para testes, colocar a porta "8081", pois no back-end está a porta "8080"!
 */
-app.listen(process.env.PORT || 8085);
+app.listen(process.env.PORT || 8080);
