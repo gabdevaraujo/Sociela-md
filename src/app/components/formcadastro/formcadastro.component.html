@@ -1,0 +1,169 @@
+<div class="container">
+
+
+      <form>
+       <!-- 1º Linha -->
+    <div class="form-row">
+
+      <!-- Nome Input -->
+      <div class="form-group col-md-6">
+        <label>Nome</label>
+        <input type="text" class="form-control" placeholder="Ex: José da Silva Martins" formControlName="nome">
+      </div>
+
+      <!-- E-Mail Input -->
+      <div class="form-group col-md-6">
+        <label for="">E-mail</label>
+        <!-- <label class="sr-only" for="inlineFormInputGroup">E-mail</label> -->
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+
+            <div class="input-group-text">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+              </svg>
+            </div>
+
+          </div>
+          <input type="email" class="form-control" id="inlineFormInputGroup" placeholder="Ex: meuemail@email.com" formControlName="email">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Grupo de Endereço -->
+   <!--  <div formGroupName = "Endereco"> -->
+      <!-- 2º Linha -->
+      <div class="form-row">
+
+        <!-- Cep Input -->
+        <div class="form-group col-md-2">
+          <label>CEP</label>
+          <input
+            type="text"
+            class="form-control"
+            mask="00.000-000"
+            placeholder="00.000-00"
+            [dropSpecialCharacters]="true"
+            formControlName="cep"
+            (blur) = "consultaCEP()"
+          >
+        </div>
+
+        <!-- Endereço Input -->
+        <div class="form-group col-md-10">
+
+          <label for="">Endereço</label>
+          <!-- <label class="sr-only" for="inlineFormInputGroup">E-mail</label> -->
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+
+              <div class="input-group-text">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M7.646 1.146a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5H9.5a.5.5 0 0 1-.5-.5v-4H7v4a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6zM2.5 7.707V14H6v-4a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5v4h3.5V7.707L8 2.207l-5.5 5.5z"/>
+                  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                </svg>
+              </div>
+
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Ex: Rua A, 115 - Ap 505" formControlName="endereco">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 3º Linha -->
+      <div class="form-row">
+
+        <!-- Bairro Input -->
+        <div class="form-group col-md-4">
+          <label>Bairro</label>
+          <input type="text" class="form-control" placeholder="Ex: Boa Viagem" formControlName="bairro">
+        </div>
+
+        <!-- Cidade Input -->
+        <div class="form-group col-md-4">
+          <label>Cidade</label>
+          <input type="text" class="form-control" placeholder="Ex: Recife" formControlName="cidade">
+        </div>
+
+        <!-- Estado Input -->
+        <div class="col-md-4">
+          <label>Estado</label>
+          <input type="text" class="form-control" placeholder="Ex: Bahia" formControlName="estado">
+        </div>
+
+      </div>
+    <!-- </div> -->
+
+    <!-- 4º Linha -->
+    <div class="form-row">
+
+      <!-- Telefpne Input -->
+      <div class="form-group col-md-4">
+        <label>Telefone</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="(78) 5544-3322"
+          formControlName="telefone"
+          mask="(00) 0 0000-0000 || (00) 0000-0000"
+          [dropSpecialCharacters]="true"
+        >
+      </div>
+
+      <!-- Celular Input -->
+      <div class="form-group col-md-4">
+        <label>Celular</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="(78) 95544-3322"
+          formControlName="celular"
+          mask="(00) 0 0000-0000 || (00) 0000-0000"
+          [dropSpecialCharacters]="true"
+        >
+      </div>
+
+      <!-- Prefeituras Input -->
+
+      <div class="col-md-4">
+        <label>Prefeitura</label>
+        <input type="text" class="form-control" placeholder="Ex: Bahia" formControlName="prefeitura">
+      </div>
+
+
+      </div>
+
+    <div class="form-row">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="check2" formControlName="aceiteTermoConsent">
+        <label class="form-check-label" for="check2">
+          <a (click) = "openDialogTermos()">Li e aceito o termo de consentimento.</a>
+        </label>
+      </div>
+    </div>
+
+    <div class="form-row mb-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="check1" formControlName="aceiteTermoPrivacidade">
+        <label class="form-check-label" for="check1">
+         <a (click) = "openDialogTermos()">Li e autorizo que os dados preenchidos acima sejam disponibilizados à Sociela Assitencial</a>
+        </label>
+      </div>
+    </div>
+
+    <div class="row justify-content-center mb-2">
+      <div class="col-md2 mr-1">
+        <a class="btn btn-primary" (click) = "openDialog()">Salvar Cadastro</a>
+        <!-- <button type="submit" class="btn btn-primary">Salvar Cadastro</button> -->
+      </div>
+      <div class="col-md2">
+        <button type="button" class="btn btn-danger" mat-dialog-close>Cancelar</button>
+      </div>
+
+    </div>
+
+      </form>
+
+</div>

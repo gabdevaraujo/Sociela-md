@@ -1,0 +1,41 @@
+.header-100{
+  background-image: url("../../../assets/img/Header\ Section.png");
+  background-color:rgba(159, 210, 255, 1);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.cardImg{
+  background-image: url('../../../assets/img/fundocard.png');
+  background-color: rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container{
+  margin-top: 30vh;
+}
+
+h1{
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.linha-2{
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.bgi{
+  background-color: #0864B1;
+  font-weight: 400;
+  font-size: 2em;
+  font-family: 'Passion One';
+  color: #fff;
+}

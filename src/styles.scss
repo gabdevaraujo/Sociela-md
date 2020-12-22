@@ -1,1 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header-100{
+  height: 100vh;
+  width: 100%;
+}
+
+.h1-responsive{
+  color: rgba(8, 100, 177, 1);
+  font-weight: 400;
+  font-size: 2em;
+  font-family: 'Passion One';
+  text-align: center;
+}
+
+.myapp-no-padding-dialog{
+  padding: 0px;
+  border-radius: 0px;
+}
+
+.padding-zero{
+  padding-right: 0%;
+  padding-left: 0%;
+  padding-top: 0%;
+  padding-bottom: 0ch;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
