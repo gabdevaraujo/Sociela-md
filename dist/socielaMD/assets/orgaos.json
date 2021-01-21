@@ -1,0 +1,58 @@
+[
+  {
+    "nome": "Governo da Bahia",
+    "logo": "../../../assets/img/Bahia Governo.jpg"
+  },
+  {
+    "nome": "Camara Municipal de Aracaju",
+    "logo": "../../../assets/img/Camara Municipal de Aracaju.png"
+  },
+  {
+    "nome": "Camara Municipal de Entre Rios",
+    "logo": "../../../assets/img/Camara Municipal de Entre Rios.png"
+  },
+  {
+    "nome": "Camara Municipal de Salvador",
+    "logo": "../../../assets/img/Camara Municipal de Salvador.jpg"
+  },
+  {
+    "nome": "Camara Municipal de Santo Amaro",
+    "logo": "../../../assets/img/Camara Municipal de Santo Amaro.jpg"
+  },
+  {
+    "nome": "Ministério Público da Bahia",
+    "logo": "../../../assets/img/Ministério Público da Bahia.png"
+  },
+  {
+    "nome": "Prefeitura de Aracaju",
+    "logo": "../../../assets/img/Prefeitura de Aracaju.jpg"
+  },
+  {
+    "nome": "Prefeitura de Camaçari",
+    "logo": "../../../assets/img/Prefeitura de Camaçari.jpg"
+  },
+  {
+    "nome": "Prefeitura de Cruz das Almas",
+    "logo": "../../../assets/img/Prefeitura de Cruz das Almas.png"
+  },
+  {
+    "nome": "Prefeitura de Salvador",
+    "logo": "../../../assets/img/Prefeitura de Salvador.jpg"
+  },
+  {
+    "nome": "Prefeitura de Santo Amaro",
+    "logo": "../../../assets/img/Prefeitura de Santo Amaro.jpg"
+  },
+  {
+    "nome": "Prefeitura de Sao Francisco do Conde",
+    "logo": "../../../assets/img/Prefeitura de Sao Francisco do Conde.png"
+  },
+  {
+    "nome": "Prefeitura de Serrinha",
+    "logo": "../../../assets/img/Prefeitura de Serrinha.jpg"
+  },
+  {
+    "nome": "Governo do Sergipe",
+    "logo": "../../../assets/img/Sergipe Governo.jpg"
+  }
+]

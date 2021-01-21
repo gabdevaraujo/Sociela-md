@@ -34,6 +34,55 @@
       </div>
     </div>
 
+    <div class="form-row">
+
+      <!-- CPF Input -->
+      <div class="form-group col-md-4">
+        <label>CPF</label>
+        <input type="text" class="form-control" mask="000.000-000-00" formControlName="cpf">
+      </div>
+
+      <!-- RG Input -->
+      <div class="form-group col-md-4">
+        <label>RG</label>
+        <input type="text" class="form-control" mask="00.000-000-0" formControlName="rg">
+      </div>
+
+      <!-- DATA NASCIMENTO Input -->
+      <div class="form-group col-md-4">
+        <label>Data de Nascimento</label>
+        <input type="text" class="form-control" mask="00/00/0000" formControlName="dataNascimento">
+      </div>
+
+    </div>
+
+    <div class="form-row">
+
+      <!-- Nome do Pai Input -->
+      <div class="form-group col-md-6">
+        <label>Nome do Pai</label>
+        <input type="text" class="form-control" formControlName="nomePai">
+      </div>
+
+      <!-- Nome da Mãe Input -->
+      <div class="form-group col-md-6">
+        <label>Nome da Mãe</label>
+        <input type="text" class="form-control" formControlName="nomeMae">
+      </div>
+
+    </div>
+
+    <div class="row mb-3">
+
+      <div class="col-md-6">
+        <label>Sou servidor do(a):</label>
+        <select class="custom-select">
+          <option *ngFor="let orgao of orgaos" value="{{orgao.id}}">{{orgao.nome}}</option>
+        </select>
+      </div>      
+
+    </div>
+
     <!-- Grupo de Endereço -->
     <!--  <div formGroupName = "Endereco"> -->
     <!-- 2º Linha -->
@@ -89,7 +138,7 @@
       <!-- Estado Input -->
       <div class="col-md-4">
         <label>Estado</label>
-        <input type="text" class="form-control" placeholder="Ex: Bahia" formControlName="estado">
+        <input type="text" class="form-control" placeholder="P" formControlName="estado">
       </div>
 
     </div>
@@ -113,11 +162,6 @@
       </div>
 
       <!-- Prefeituras Input -->
-
-      <div class="col-md-4">
-        <label>Orgão</label>
-        <input type="text" class="form-control" placeholder="Ex: Bahia" formControlName="prefeitura">
-      </div>
 
       <div class="col-md-4">
         <label>Escolha seus serviços</label>

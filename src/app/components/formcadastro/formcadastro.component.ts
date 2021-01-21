@@ -7,6 +7,7 @@ import { FormGroup, FormControl, FormBuilder } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Servicos } from 'src/app/model/servicos.model';
+import { Orgao } from 'src/app/model/orgao.model';
 
 @Component({
   selector: 'app-formcadastro',
@@ -18,6 +19,7 @@ export class FormcadastroComponent implements OnInit {
   modalRef: MDBModalRef;
   formulario: FormGroup;
   servicos: Servicos[];
+  orgaos: Orgao[];
 
   constructor(
     public dialog: MatDialog,
@@ -30,6 +32,7 @@ export class FormcadastroComponent implements OnInit {
 
 
     this.getServicos();
+    this.getOrgaos();
 
     this.formulario = this.formBuilder.group({
       nome: [null],
@@ -44,7 +47,8 @@ export class FormcadastroComponent implements OnInit {
       prefeitura: [null],
       aceiteTermoConsent: [null],
       aceiteTermoPrivacidade: [null],
-      servicos: [null]
+      servicos: [null],
+      orgao: [null]
 
     });
   }
@@ -104,4 +108,10 @@ export class FormcadastroComponent implements OnInit {
       });
   }
 
+  getOrgaos(){
+    this.cadastroService.getOrgaos()
+      .subscribe(dados => {
+        this.orgaos = dados;
+      })
+  }
 }
