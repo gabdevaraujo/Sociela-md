@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "nome": "Assistência Funeral"
+  },
+  {
+    "id": 2,
+    "nome": "Desconto em farmácia"
+  },
+  {
+    "id": 3,
+    "nome": "Rede Descontos"
+  },
+  {
+    "id": 4,
+    "nome": "Telemedicina"
+  },
+  {
+    "id": 5,
+    "nome": "Orientação Psicologica"
+  },
+  {
+    "id": 6,
+    "nome": "Orientação Nutricional"
+  },
+  {
+    "id": 7,
+    "nome": "Especialista digital"
+  },
+  {
+    "id": 8,
+    "nome": "Cartão Alimentação"
+  },
+  {
+    "id": 9,
+    "nome": "Assistência Pet"
+  },
+  {
+    "id": 10,
+    "nome": "Plano Odontológico"
+  },
+  {
+    "id": 11,
+    "nome": "Plano de saúde"
+  }
+]

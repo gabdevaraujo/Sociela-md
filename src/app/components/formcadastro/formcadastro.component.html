@@ -7,15 +7,10 @@
 
       <!-- Nome Input -->
       <div class="form-group col-md-6">
-
-        <div class="md-form form-lg">
-          <input type="text" id="form1" class="form-control form-control-lg" formControlName="nome" mdbInput>
-          <label for="form1">Nome</label>
-        </div>
-
-
-
+        <label>Nome</label>
+        <input type="text" class="form-control" formControlName="nome">
       </div>
+
 
       <!-- E-Mail Input -->
       <div class="form-group col-md-6">
@@ -37,7 +32,6 @@
             formControlName="email">
         </div>
       </div>
-
     </div>
 
     <!-- Grupo de Endereço -->
@@ -121,10 +115,16 @@
       <!-- Prefeituras Input -->
 
       <div class="col-md-4">
-        <label>Prefeitura</label>
+        <label>Orgão</label>
         <input type="text" class="form-control" placeholder="Ex: Bahia" formControlName="prefeitura">
       </div>
 
+      <div class="col-md-4">
+        <label>Escolha seus serviços</label>
+        <select class="custom-select" multiple>
+          <option *ngFor="let servico of servicos" value="{{servico.id}}">{{servico.nome}}</option>
+        </select>
+      </div>
 
     </div>
 

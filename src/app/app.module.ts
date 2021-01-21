@@ -1,3 +1,4 @@
+import { OrgaosComponent } from './components/orgaos/orgaos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -43,7 +44,8 @@ import { FinalComponent } from './components/final/final.component';
     FormcadastroComponent,
     ModalComponent,
     TermoComponent,
-    FinalComponent
+    FinalComponent,
+    OrgaosComponent
   ],
   imports: [
     BrowserModule,

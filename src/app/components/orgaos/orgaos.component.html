@@ -1,0 +1,23 @@
+<div class="container mt-3">
+
+  <div class="row justify-content-center mb-2">
+    <span class="border-bottom">
+      <h1 class="h1-responsive">{{this.titulo}}</h1>
+    </span>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-6">
+    <div *ngFor="let orgao of orgaos" >
+      <div class="col mb-4">
+        <div class="card">
+          <img src="{{orgao.logo}}" class="card-img-top img-fluid" alt="{{orgao.nome}}" width="50px" height="150px">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{orgao.nome}}</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
